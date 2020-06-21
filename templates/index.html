@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Clean Blog - Start Bootstrap Theme</title>
+    <title>BotHub</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
@@ -28,7 +28,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand" href="{{ url_for('index') }}">Start Bootstrap</a>
+        <a class="navbar-brand" href="{{ url_for('index') }}">BotHub</a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
@@ -41,8 +41,22 @@
             <li class="nav-item">
               <a class="nav-link" href="{{ url_for('about') }}">About</a>
             </li>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="{{ url_for('add') }}">Add</a>
+            </li>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('signup') }}">Signup</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('dashboard') }}">Dashboard</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="{{ url_for('logout') }}">Logout</a>
             </li>
           </ul>
         </div>
@@ -50,13 +64,13 @@
     </nav>
 
     <!-- Page Header -->
-    <header class="masthead" style="background-image: url('{{ url_for('static', filename='home-bg.jpg') }}')">
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename='Home.jpg') }}')">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-md-10 mx-auto">
             <div class="site-heading">
-              <h1>Clean Blog</h1>
-              <span class="subheading">A Blog Theme by Start Bootstrap</span>
+              <h1>BotHub</h1>
+              <span class="subheading">A robot community space</span>
             </div>
           </div>
         </div>
